@@ -7,6 +7,9 @@ Easy Guac is a shell script designed to simplify the deployment of Apache Guacam
 > **LAB USE ONLY:** This script is intended for development and testing in isolated lab environments. It serves Guacamole over HTTP (Port 8080). It is **not** intended for production use or exposure to the public internet without an external reverse proxy and additional security hardening.
 
 ## 🚀 Deployment
+> [!NOTE]
+> This script requires root privileges to install Docker dependencies and manage system services. Please ensure you have `sudo` access on your machine. Add `sudo` to the one-liner below between && and ./easy-guac.sh
+
 To deploy the full stack (Guacamole, Guacd, and Postgres) with a single command, run:
 ```bash
 wget -qO easy-guac.sh https://raw.githubusercontent.com/HeckinTeagan/Easy-Guac/main/easy-guac.sh && chmod +x easy-guac.sh && ./easy-guac.sh 
